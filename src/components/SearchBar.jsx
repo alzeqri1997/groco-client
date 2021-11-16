@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faSearch,
@@ -6,12 +6,21 @@ import {
 
 
 const SearchBar = ({ isSearchOpen }) => {
+  const inputRef = useRef();
+
+  useEffect(() => {
+    if (isSearchOpen) {
+      inputRef.current.focus()
+    }
+  })
+
+  console.log(inputRef);
   return (
     <form
       action=""
       className={`search-form ${isSearchOpen ? 'active' : ''}`}
     >
-      <input type="search" placeholder="search here..." id="search-box" />
+      <input ref={inputRef} type="search" placeholder="search here..." id="search-box" />
       <label htmlFor="search-box">
         <FontAwesomeIcon
           icon={faSearch}

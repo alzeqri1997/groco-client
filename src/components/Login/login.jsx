@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 
 const Login = ({ isLoginOpen }) => {
+
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (isLoginOpen) {
+      inputRef.current.focus();
+    }
+  })
+
   return (
     <form action="" className={`login-form ${isLoginOpen ? 'active' : ''}`}>
       <h3>login form</h3>
-      <input type="email" placeholder="enter your email" className="box" />
+      <input ref={inputRef} type="email" placeholder="enter your email" className="box" />
       <input
         type="password"
         placeholder="enter your password"
