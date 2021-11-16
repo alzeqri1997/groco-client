@@ -47,7 +47,7 @@ const Promotion = () => {
   ];
   return (
     <section className="section promotion">
-      <div className="title">
+      <div className="promotion-title">
         <h2>Shop Collections</h2>
         <span>Select from the premium product and save plenty money</span>
       </div>
