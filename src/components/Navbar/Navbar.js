@@ -11,7 +11,6 @@ import {
 import SearchBar from '../SearchBar';
 import ShoppingCart from '../Shopping-cart/shopping-cart';
 import Login from '../Login/login';
-import './Navbar.scss';
 const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);

@@ -9,8 +9,6 @@ import promo6 from '../../images/promo/promo6.jpg';
 
 import PromotionItem from './PromotionItem';
 
-import './promotion.scss';
-
 const Promotion = () => {
   // Dummy Data
   const promotionContent = [
