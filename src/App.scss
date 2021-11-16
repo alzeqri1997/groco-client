@@ -59,6 +59,31 @@ section {
   display: none;
 }
 
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+  border-bottom: $border;
+  color: $black;
+
+  span {
+    color: $green;
+    padding-left: 0.7rem;
+  }
+
+  a {
+    margin-left: auto;
+    color: $light-color;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
 .heading {
   background: url(./images/heading-bg.jpg) no-repeat;
   background-size: cover;
