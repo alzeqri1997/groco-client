@@ -1,0 +1,19 @@
+.gallery .box-container {
+  @include grid(30rem);
+
+  .box {
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &:hover img {
+      transform: scale(1.2);
+    }
+  }
+}
