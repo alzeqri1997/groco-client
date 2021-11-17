@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Category = ({ img, title, type }) => {
   return (
-    <Link to="/" class="box">
+    <Link to="/" className="box">
       <img src={img} alt={type} />
       <h3>{title}</h3>
     </Link>

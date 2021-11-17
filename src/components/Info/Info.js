@@ -24,7 +24,7 @@ const Info = () => {
     },
   ];
   return (
-    <section class="info-container">
+    <section className="info-container">
       {infoData.map((info, index) => (
         <InfoItem {...info} key={index} />
       ))}

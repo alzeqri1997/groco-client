@@ -57,12 +57,12 @@ const Products = () => {
     },
   ];
   return (
-    <section class="products">
-      <h1 class="title">
+    <section className="products">
+      <h1 className="title">
         our <span>products</span> <Link to="/">view all {'>>'}</Link>{' '}
       </h1>
 
-      <div class="box-container">
+      <div className="box-container">
         {productData.map((product, index) => (
           <Product {...product} key={index} />
         ))}

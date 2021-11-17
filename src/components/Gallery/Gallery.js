@@ -31,12 +31,12 @@ const Gallery = () => {
     },
   ];
   return (
-    <section class="gallery">
-      <h1 class="title">
+    <section className="gallery">
+      <h1 className="title">
         our <span>gallery</span>
       </h1>
 
-      <div class="box-container">
+      <div className="box-container">
         {galleryData.map((item, index) => (
           <GalleryItem img={item.img} key={index} />
         ))}

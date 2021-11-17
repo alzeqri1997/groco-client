@@ -37,12 +37,12 @@ export default function Categories() {
     },
   ];
   return (
-    <section class="category">
-      <h1 class="title">
+    <section className="category">
+      <h1 className="title">
         our <span>category</span>
       </h1>
 
-      <div class="box-container">
+      <div className="box-container">
         {categoriesData.map((cat, index) => (
           <Category {...cat} key={index} />
         ))}

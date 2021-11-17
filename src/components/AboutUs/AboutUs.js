@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
-    <section class="about">
-      <div class="image">
+    <section className="about">
+      <div className="image">
         <img src={aboutImg} alt="" />
       </div>
 
-      <div class="content">
+      <div className="content">
         <span>welcome to our shop</span>
         <h3>fresh and organic groceries</h3>
         <p>
@@ -23,7 +23,7 @@ const AboutUs = () => {
           cumque molestiae blanditiis deleniti aspernatur, ab tempora quisquam
           sapiente commodi hic.
         </p>
-        <Link to="/" class="btn">
+        <Link to="/" className="btn">
           read more
         </Link>
       </div>

@@ -4,22 +4,22 @@ import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg
 
 const ContactInfo = () => {
   return (
-    <div class="icons-container">
+    <div className="icons-container">
 
-      <div class="icons">
+      <div className="icons">
         <FontAwesomeIcon icon={faPhone} />
         <h3>our number</h3>
         <p>+123-456-7890</p>
         <p>+111-222-3333</p>
       </div>
 
-      <div class="icons">
+      <div className="icons">
         <FontAwesomeIcon icon={faEnvelope} />
         <h3>our email</h3>
         <p>name@example.com</p>
       </div>
 
-      <div class="icons">
+      <div className="icons">
         <FontAwesomeIcon icon={faMapMarkerAlt} />
         <h3>our address</h3>
         <p>United Status, Los Angeles</p>

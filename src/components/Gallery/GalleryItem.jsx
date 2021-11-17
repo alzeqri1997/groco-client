@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const GalleryItem = ({ img }) => {
   return (
-    <div class="box">
+    <div className="box">
       <img src={img} alt="" />
     </div>
   )

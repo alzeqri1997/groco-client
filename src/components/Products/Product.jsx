@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom';
 
 const Product = ({ img, name, price }) => {
   return (
-    <div class="box">
-      <div class="icons">
+    <div className="box">
+      <div className="icons">
         <Link to="/">
           <FontAwesomeIcon icon={faShoppingCart} />
         </Link>
@@ -25,18 +25,18 @@ const Product = ({ img, name, price }) => {
           <FontAwesomeIcon icon={faEye} />
         </Link>
       </div>
-      <div class="image">
+      <div className="image">
         <img src={img} alt="" />
       </div>
-      <div class="content">
+      <div className="content">
         <h3>{name}</h3>
-        <div class="price">${price}</div>
-        {/* <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="far fa-star"></i>
+        <div className="price">${price}</div>
+        {/* <div className="stars">
+        <i className="fas fa-star"></i>
+        <i className="fas fa-star"></i>
+        <i className="fas fa-star"></i>
+        <i className="fas fa-star"></i>
+        <i className="far fa-star"></i>
       </div> */}
       </div>
     </div>

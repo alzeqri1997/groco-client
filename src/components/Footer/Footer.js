@@ -4,9 +4,9 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   return (
-    <section class="footer">
-      <div class="box-container">
-        <div class="box">
+    <section className="footer">
+      <div className="box-container">
+        <div className="box">
           <h3>quick links</h3>
           <a href="home.html">
             <FontAwesomeIcon icon={faArrowRight} /> home
@@ -28,7 +28,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div class="box">
+        <div className="box">
           <h3>extra links</h3>
           <a href="#">
             {' '}
@@ -48,22 +48,22 @@ const Footer = () => {
           </a>
         </div>
 
-        <div class="box">
+        <div className="box">
           <h3>follow us</h3>
           <a href="#">
-            <i class="fab fa-facebook-f"></i> facebook
+            <i className="fab fa-facebook-f"></i> facebook
           </a>
           <a href="#">
-            <i class="fab fa-twitter"></i> twitter
+            <i className="fab fa-twitter"></i> twitter
           </a>
           <a href="#">
-            <i class="fab fa-instagram"></i> instagram
+            <i className="fab fa-instagram"></i> instagram
           </a>
           <a href="#">
-            <i class="fab fa-linkedin"></i> linkedin
+            <i className="fab fa-linkedin"></i> linkedin
           </a>
           <a href="#">
-            <i class="fab fa-pinterest"></i> pinterest
+            <i className="fab fa-pinterest"></i> pinterest
           </a>
         </div>
       </div>

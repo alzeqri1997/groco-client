@@ -3,9 +3,9 @@ import React from 'react'
 const InfoItem = ({ img, title, body }) => {
   return (
     <div>
-      <div class="info">
+      <div className="info">
         <img src={img} alt="" />
-        <div class="content">
+        <div className="content">
           <h3>{title}</h3>
           <span>{body}</span>
         </div>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Heading = ({ name, title }) => {
   return (
     <div>
-      <div class="heading">
+      <div className="heading">
         <h1>{title}</h1>
         <p>
           <Link to="/home"> Home {'>>'}</Link> {name}

@@ -55,7 +55,7 @@ const Client = () => {
     },
   ];
   return (
-    <section class="review">
+    <section className="review">
       {clientData.map((client, index) => (
         <ClientItem {...client} key={index} />
       ))}
