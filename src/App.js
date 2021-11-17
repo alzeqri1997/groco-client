@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
 import Shop from './pages/shop/Shop';
@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Navigate replace to="/home" />} />
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/shop" element={<Shop />} />
           <Route exact path="/about" element={<About />} />
