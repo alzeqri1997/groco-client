@@ -7,7 +7,7 @@ import Heading from '../../components/Heading';
 const Shop = () => {
   return (
     <>
-      <Heading name="shop" />
+      <Heading name="shop" title="our shop" />
       <Categories />
       <Products />
     </>

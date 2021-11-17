@@ -7,7 +7,7 @@ import Gallery from '../../components/Gallery/Gallery';
 const About = () => {
   return (
     <>
-      <Heading name="about" />
+      <Heading name="about" title="about us" />
       <AboutUs />
       <Gallery />
     </>

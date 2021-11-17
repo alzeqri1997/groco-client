@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Heading = ({ name }) => {
+const Heading = ({ name, title }) => {
   return (
     <div>
       <div class="heading">
-        <h1>our shop</h1>
+        <h1>{title}</h1>
         <p>
           <Link to="/home"> Home {'>>'}</Link> {name}
         </p>
