@@ -7,6 +7,7 @@ import About from './pages/about/About';
 import Review from './pages/Review/Review';
 import ContactUs from './pages/Contact-Us/ContactUs';
 import Blog from './pages/Blog/Blog';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           <Route exact path="/review" element={<Review />} />
           <Route exact path="/contact" element={<ContactUs />} />
           <Route exact path="/blog" element={<Blog />} />
+          <Route path="*" element={<NotFound />} />
+          <Footer />
+        </Routes>
       </BrowserRouter>
     </>
   );
