@@ -1,0 +1,27 @@
+.info-container {
+  @include grid(27rem);
+
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+
+    img {
+      height: 7rem;
+    }
+
+    .content {
+      h3 {
+        font-size: 2rem;
+        color: $black;
+        padding-bottom: 0.5rem;
+      }
+
+      span {
+        font-size: 1.5rem;
+        color: $light-color;
+      }
+    }
+  }
+}
