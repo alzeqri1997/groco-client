@@ -15,6 +15,7 @@ const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isBarOpen, setIsBarOpen] = useState(false);
 
   const handleSearch = () => {
     setIsSearchOpen((prev) => !prev);
@@ -34,22 +35,41 @@ const Navbar = () => {
     setIsSearchOpen(false);
   };
 
+  const handleNavBar = () => {
+    setIsBarOpen((prev) => !prev);
+  };
+
+  const handleBarOpen = () => {
+    setIsBarOpen(false);
+  };
+
   return (
     <header className="header">
       <Link to="/" className="logo">
         <Logo className="logo__img" /> groco
       </Link>
       <nav className={`navbar ${isBarOpen ? 'active' : ''}`}>
-        <Link to="/home">home</Link>
-        <Link to="/shop">shop</Link>
-        <Link to="/about">about</Link>
-        <Link to="/review">review</Link>
-        <Link to="/blog">blog</Link>
-        <Link to="/contact">contact</Link>
+        <Link to="/home" onClick={handleBarOpen}>
+          home
+        </Link>
+        <Link to="/shop" onClick={handleBarOpen}>
+          shop
+        </Link>
+        <Link to="/about" onClick={handleBarOpen}>
+          about
+        </Link>
+        <Link to="/review" onClick={handleBarOpen}>
+          review
+        </Link>
+        <Link to="/blog" onClick={handleBarOpen}>
+          blog
+        </Link>
+        <Link to="/contact" onClick={handleBarOpen}>
+          contact
+        </Link>
       </nav>
 
       <div className="icons">
-        <FontAwesomeIcon icon={faBars} id="menu-btn" />
         <FontAwesomeIcon
           icon={faSearch}
           id="search-btn"
@@ -62,6 +82,7 @@ const Navbar = () => {
         />
         <FontAwesomeIcon icon={faUser} id="login-btn" onClick={handleLogin} />
       </div>
+      <FontAwesomeIcon icon={faBars} id="menu-btn" onClick={handleNavBar} />
 
       <SearchBar isSearchOpen={isSearchOpen} />
 
