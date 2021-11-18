@@ -51,8 +51,8 @@ const Promotion = () => {
       </div>
 
       <div className="promotion-layout container">
-        {promotionContent.map((item) => (
-          <PromotionItem {...item} />
+        {promotionContent.map((item, index) => (
+          <PromotionItem {...item} key={index} />
         ))}
       </div>
     </section>

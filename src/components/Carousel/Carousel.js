@@ -52,7 +52,6 @@ const Carousel = () => {
       <section className="hero">
         <div className="slides-container">
           {slideContent.map((slide, index) => {
-            console.log(index);
             return (
               <Slider
                 img={slide.img}

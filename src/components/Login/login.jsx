@@ -22,7 +22,7 @@ const Login = ({ isLoginOpen }) => {
       />
       <div className="remember">
         <input type="checkbox" name="" id="remember-me" />
-        <label for="remember-me">remember me</label>
+        <label htmlFor="remember-me">remember me</label>
       </div>
       <input type="submit" value="login now" className="btn" />
       <p>

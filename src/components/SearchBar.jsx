@@ -13,8 +13,6 @@ const SearchBar = ({ isSearchOpen }) => {
       inputRef.current.focus()
     }
   })
-
-  console.log(inputRef);
   return (
     <form
       action=""
