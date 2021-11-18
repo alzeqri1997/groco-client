@@ -6,7 +6,6 @@ import {
   faSearch,
   faShoppingCart,
   faUser,
-  faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 import SearchBar from '../SearchBar';
 import ShoppingCart from '../Shopping-cart/shopping-cart';
