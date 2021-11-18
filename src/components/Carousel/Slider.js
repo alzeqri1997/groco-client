@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Slider = ({ img, title, body, textBtn, active }) => {
   return (
@@ -6,9 +7,9 @@ const Slider = ({ img, title, body, textBtn, active }) => {
       <div className="content">
         <span>{title}</span>
         <h3>{body}</h3>
-        <a href="#" className="btn">
+        <Link to="/shop" className="btn">
           {textBtn}
-        </a>
+        </Link>
       </div>
       <div className="image">
         <img src={img} alt="" />

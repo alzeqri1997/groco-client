@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 const Login = ({ isLoginOpen }) => {
 
@@ -25,10 +26,10 @@ const Login = ({ isLoginOpen }) => {
       </div>
       <input type="submit" value="login now" className="btn" />
       <p>
-        forget password? <a href="#">click here</a>
+        forget password? <Link to="/">click here</Link>
       </p>
       <p>
-        don't have an account? <a href="#">create one</a>
+        don't have an account? <Link to="/">create one</Link>
       </p>
     </form>
   )

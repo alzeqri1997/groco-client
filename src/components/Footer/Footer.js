@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -8,63 +9,62 @@ const Footer = () => {
       <div className="box-container">
         <div className="box">
           <h3>quick links</h3>
-          <a href="home.html">
+          <Link to="home">
             <FontAwesomeIcon icon={faArrowRight} /> home
-          </a>
-          <a href="shop.html">
+          </Link>
+          <Link to="shop">
             <FontAwesomeIcon icon={faArrowRight} /> shop
-          </a>
-          <a href="about.html">
+          </Link>
+          <Link to="about">
             <FontAwesomeIcon icon={faArrowRight} /> about
-          </a>
-          <a href="review.html">
+          </Link>
+          <Link to="review">
             <FontAwesomeIcon icon={faArrowRight} /> review
-          </a>
-          <a href="blog.html">
+          </Link>
+          <Link to="blog">
             <FontAwesomeIcon icon={faArrowRight} /> blog
-          </a>
-          <a href="contact.html">
+          </Link>
+          <Link to="contact">
             <FontAwesomeIcon icon={faArrowRight} /> contact
-          </a>
+          </Link>
         </div>
 
         <div className="box">
           <h3>extra links</h3>
-          <a href="#">
-            {' '}
+          <Link to="/">
             <FontAwesomeIcon icon={faArrowRight} /> my order
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/">
             <FontAwesomeIcon icon={faArrowRight} /> my favorite
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/">
             <FontAwesomeIcon icon={faArrowRight} /> my wishlist
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/">
             <FontAwesomeIcon icon={faArrowRight} /> my account
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/">
             <FontAwesomeIcon icon={faArrowRight} /> terms or use
-          </a>
+          </Link>
         </div>
 
         <div className="box">
           <h3>follow us</h3>
-          <a href="#">
+          <Link to="/">
             <i className="fab fa-facebook-f"></i> facebook
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/">
             <i className="fab fa-twitter"></i> twitter
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/">
             <i className="fab fa-instagram"></i> instagram
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/">
             <i className="fab fa-linkedin"></i> linkedin
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/">
             <i className="fab fa-pinterest"></i> pinterest
-          </a>
+          </Link>
         </div>
       </div>
     </section>

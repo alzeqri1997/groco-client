@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBars,
@@ -35,16 +36,16 @@ const Navbar = () => {
 
   return (
     <header className="header">
-      <a href="home.html" className="logo">
+      <Link to="/" className="logo">
         <Logo className="logo__img" /> groco
-      </a>
-      <nav className="navbar">
-        <a href="home.html">home</a>
-        <a href="shop.html">shop</a>
-        <a href="about.html">about</a>
-        <a href="review.html">review</a>
-        <a href="blog.html">blog</a>
-        <a href="contact.html">contact</a>
+      </Link>
+      <nav className={`navbar ${isBarOpen ? 'active' : ''}`}>
+        <Link to="/home">home</Link>
+        <Link to="/shop">shop</Link>
+        <Link to="/about">about</Link>
+        <Link to="/review">review</Link>
+        <Link to="/blog">blog</Link>
+        <Link to="/contact">contact</Link>
       </nav>
 
       <div className="icons">

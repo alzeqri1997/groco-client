@@ -2,6 +2,7 @@ import React from 'react';
 import {
   faTimes,
 } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 import Box from './Box';
 
@@ -25,9 +26,9 @@ const ShoppingCart = ({ isCartOpen }) => {
       <h3 className="total">
         total : <span>56.97</span>
       </h3>
-      <a href="#" className="btn">
+      <Link to="/" className="btn">
         checkout cart
-      </a>
+      </Link>
     </div>
   )
 }
